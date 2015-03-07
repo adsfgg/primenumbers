@@ -57,10 +57,9 @@ def check_brute_force():
 
 def check_wilson_theorem():
     n = getN("P")
-    print("(P-1)! + 1 = x;\n where x is divisible by P")
-    print("\n(" + str(n) + "-1)! + 1 = x")
-    value = math.factorial(n - 1) + 1
-    print("\n(" + str(n) + "-1)! + 1 = " + str(value))
+    print("By the Wilson Theorem: (P-1)! + 1 is divisible by P\n")
+    print("\n(" + str(n) + "-1)! + 1 = " + s)
+    value = math.factorial(n - 1) + 1tr(value))
     if value % n == 0:
         print("\n" + str(value) + " is divisible by " + str(n))
         print("\nTherefore: " + str(n) + " is prime by the Wilson Theorem.")
