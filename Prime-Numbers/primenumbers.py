@@ -78,11 +78,12 @@ def check_wilson_prime():
         print("\n(" + str(n) + "-1)! + 1 = " + str(value))
     if value % n == 0:
         print("\n" + str(value) + " is divisible by " + str(n))
-        if (value / n) % n == 0:
-            print("\n" + str(value / n) + " is divisible by " + str(n))
+        print("\n" + str(value) + " / " + str(n) + " = " + str(value /= n))
+        if value % n == 0:
+            print("\n" + str(value) + " is divisible by " + str(n))
             print("\nTherefore: " + str(n) + " is a Wilson Prime.")
         else:
-            print("\n" + str(value / n) + " is not divisible by " + str(n))
+            print("\n" + str(value) + " is not divisible by " + str(n))
             print("\nTherefore: " + str(n) + " is not a Wilson Prime.")
     else:
         print("\n" + str(value) + " is not divisible by " + str(n))
