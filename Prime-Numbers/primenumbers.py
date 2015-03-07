@@ -59,7 +59,7 @@ def check_wilson_theorem():
     n = getN("P")
     print("By the Wilson Theorem: (P-1)! + 1 is divisible by P\n")
     print("\n(" + str(n) + "-1)! + 1 = " + s)
-    value = math.factorial(n - 1) + 1tr(value))
+    value = math.factorial(n - 1) + 1
     if value % n == 0:
         print("\n" + str(value) + " is divisible by " + str(n))
         print("\nTherefore: " + str(n) + " is prime by the Wilson Theorem.")
@@ -70,8 +70,8 @@ def check_wilson_theorem():
 
 def check_wilson_prime():
     n = getN("P")
-    print("(P-1)! + 1 = x;\n where x is divisible by P")
-    print("\n(" + str(n) + "-1)! + 1 = x")
+    print("By the Wilson Theorem: (P-1)! + 1 is divisible by P\n")
+    print("\n(" + str(n) + "-1)! + 1 = " + s)
     value = math.factorial(n - 1) + 1
     if printSteps:
         print("\n(" + str(n) + "-1)! + 1 = " + str(value))
