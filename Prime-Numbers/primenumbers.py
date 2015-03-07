@@ -79,7 +79,7 @@ def check_wilson_prime():
     if value % n == 0:
         print("\n" + str(value) + " is divisible by " + str(n))
         print("\n" + str(value) + " / " + str(n) + " = " + str(value / n))
-        value /= n
+        value = int(value / n)
         if value % n == 0:
             print("\n" + str(value) + " is divisible by " + str(n))
             print("\nTherefore: " + str(n) + " is a Wilson Prime.")
